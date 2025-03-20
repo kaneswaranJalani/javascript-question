@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="mySelect">Choose an option:</label>
+<select id="mySelect">
+    <option value="apple">Apple</option>
+    <option value="banana">Banana</option>
+    <option value="cherry">Cherry</option>
+</select>
+
+<script>
+    let dropdown = document.getElementById("mySelect");
+    dropdown.addEventListener("change", function() {
+      alert("You selected: " + dropdown.value);
+  });
+</script>
+
+</body>
+</html>
