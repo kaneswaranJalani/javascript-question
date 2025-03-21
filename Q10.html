@@ -8,7 +8,14 @@
 <body>
     
     <script>
-        addEventListener
+        function listenForEnter(){
+            document.addEventListener("keydown",function(event){
+                if (event.key === "Enter"){
+                    alert("Enter key was pressed!");
+                }
+            });
+        }
+        listenForEnter();
     </script>
     
 </body>
